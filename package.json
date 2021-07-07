@@ -1,0 +1,11 @@
+{
+  "name": "mars-weather",
+  "version": "1.0.0",
+  "description": "consulta a temperatura de marte",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Sabrina Travasso Ferreira <sabrinatravasso@hotmail.com>",
+  "license": "ISC"
+}
