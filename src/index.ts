@@ -1,7 +1,3 @@
+import { getFightResult } from './api/pokemon-api'
 
-export default function eee() {
-
-  console.log('funcionou 3');
-};
-
-eee();
+getFightResult('pikachu', 'ditto');
