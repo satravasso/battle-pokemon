@@ -3,7 +3,6 @@ export type pokemon = {
   hp: number,
   attack: number,
   attackName: string,
-
 }
 
 export type stat = {

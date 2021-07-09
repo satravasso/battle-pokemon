@@ -1,3 +1,9 @@
 import { getFightResult } from "./FightPokemon/service/pokemon-api";
 
-getFightResult('pikachu', 'ditto');
+async function battlePokemon() {
+
+  const winner = await getFightResult('pikachu', 'ditto');
+  console.log(`>>>>>E o nosso ganhador é ${winner.toUpperCase()}<<<<<<`)
+}
+
+battlePokemon();

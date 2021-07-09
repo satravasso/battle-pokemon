@@ -11,6 +11,16 @@ function atkPokemon(DefensePokemon: pokemon, AtackPokemon: pokemon) {
   return hp
 
 }
+/**
+  * Retorna o pokemon ganhador, a batalha é calculada a partir dos dados consumidos da api
+  * é feita a subtração do pokemon Defensor - pokemon Atacante até que um dos pokemons
+  * fique com a vida menor ou igual à 0
+  *
+  * @param namePokemon1 - Nome do primeiro pokemon para a batalha
+  * @param namePokemon2 - Nome do segundo pokemon para a batalha
+  * @returns O nome do ganhador da batalha
+  *
+  */
 export async function getFightResult(namePokemon1: string, namePokemon2: string) {
   console.log(`Iniciamos nossa batalha Pokemon! E a batalha é ${namePokemon1} contra ${namePokemon2}`)
   let pokemon1 = await getPokemonStats(namePokemon1);
@@ -29,10 +39,11 @@ export async function getFightResult(namePokemon1: string, namePokemon2: string)
   } while (pokemon1.hp >= 0 && pokemon2.hp >= 0);
 
   if (pokemon2.hp <= 0) {
-    console.log(`>>>>>E o nosso ganhador é ${pokemon1.name}<<<<<<`)
-  } else {
-    console.log(`>>>>>E o nosso ganhador é ${pokemon2.name}<<<<<<`)
+    return pokemon1.name;
+
   }
+  return pokemon2.name
+
 
 };
 
