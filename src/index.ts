@@ -1,3 +1,3 @@
-import { getFightResult } from './api/pokemon-api'
+import { getFightResult } from "./FightPokemon/service/pokemon-api";
 
 getFightResult('pikachu', 'ditto');

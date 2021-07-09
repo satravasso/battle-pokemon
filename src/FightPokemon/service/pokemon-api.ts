@@ -1,17 +1,7 @@
 import axios from "axios";
+import { pokemon, stat } from "../types";
 
-type pokemon = {
-  name: string;
-  hp: number,
-  attack: number,
-  attackName: string,
 
-}
-
-type stat = {
-  base_stat: number,
-  name: string;
-}
 
 function atkPokemon(DefensePokemon: pokemon, AtackPokemon: pokemon) {
 
@@ -34,7 +24,7 @@ export async function getFightResult(namePokemon1: string, namePokemon2: string)
     if (pokemon2.hp >= 0) {
       pokemon1.hp = atkPokemon(pokemon1, pokemon2)
     } else {
-      console.log(`${namePokemon2} não sobreviveu ao primeiro ataque! E nosso ganhador é ${namePokemon1}`)
+      console.log(`${namePokemon2} não sobreviveu ao primeiro ataque!`)
     }
   } while (pokemon1.hp >= 0 && pokemon2.hp >= 0);
 
@@ -54,7 +44,7 @@ async function getPokemonStats(pokemonName: string) {
 
     const response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
 
-    const stats = response.data.stats.map((states: any) => { return { base_stat: states.base_stat, name: states.stat.name } });
+    const stats = response.data.stats.map((states: { base_stat: number, stat: { name: string } }) => { return { base_stat: states.base_stat, name: states.stat.name } });
 
     pokemon = {
       name: pokemonName,
