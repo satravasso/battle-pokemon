@@ -1,6 +1,6 @@
 ### battle-pokemon
 
-- Projeto tem como finalidade simular uma batalha entre dois pokemons
+Projeto tem como finalidade simular uma batalha entre dois pokemons
 
 ### Requisitos
 
