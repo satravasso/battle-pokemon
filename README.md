@@ -1,4 +1,4 @@
-# <Battle Pokemon>
+#<Battle Pokemon>
 O projeto tem como finalidade simular a batalha entre dois pokemons
 
 
