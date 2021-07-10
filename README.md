@@ -1,25 +1,45 @@
-#<Battle Pokemon>
-O projeto tem como finalidade simular a batalha entre dois pokemons
+# battle-pokemon
 
+Projeto tem como finalidade simular uma batalha entre dois pokemons
 
-## Requisitos
-Funcional
--A aplicação deve me retornar qual foi o ganhador da batalha.
+### Requisitos
 
-Tecnicos
+#### Requisitos Funcionais
+
+- A aplicação deve me retornar qual foi o ganhador da batalha.
+
+#### Tecnicos
+
 - O código deverá estar versionado em um repositório público (GitHub, GitLab, Bitbucket)
 - Não é permitido a utilização de frameworks/libs JS - exceto TypeScript
 - Cumprimento da proposta (o código faz aquilo o que diz que faz)
 - Utlização de typescript e sua configuração
+- Instação do VsCode
+- Instação do Node.js e NPM
 
-## Desenvolvendo
-Passos necessários para desenvolver o projeto - clonagem, scripts necessários, utilização de dependências externas devem ser sinalizados aqui.
+### Instalação
 
-node js
-npm
-Para desenvolvimento é necessário rodar o comando do de instalação de pacotes
-npm - yarn
+1. Instalar node.js versão 12 ou superior [aqui](https://nodejs.org/en/)
+2. Opcional: instalar yarn [aqui](https://classic.yarnpkg.com/en/docs/install/#windows-stable)
+3. Cria uma branch no gitHub a partir da [master](https://github.com/SabrinaTravasso/battle-pokemon)
+4. Clone o projeto criado na sua máquina. Instale o git [aqui](https://git-scm.com/downloads)
+5. Configure o ambiente
 
-Agora para iniciar a aplicação é necessário utilizar o script start declarado no package.json
-npm start ou yarn start
+#### Configurando ambiente
 
+**Com yarn**
+`yarn install`
+
+**Com npm**
+`npm i`
+
+### Desenvolvendo
+
+- **Iniciando projeto com yarn**
+  `yarn start`
+
+- **Iniciando projeto com npm**
+  `npm start`
+
+- **Para ambiente de dev também pode-se utilizar**
+  `yarn dev ou npm dev`
